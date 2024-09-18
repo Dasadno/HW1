@@ -14,8 +14,12 @@ int main()
 	std::cin >> num2;
 	std::cout << "Введите мат. действие: ";
 		std::cin >> math_action;
-		if (num1 == '/' && num2 == 0) {
+		if (math_action == '/' && num2 == 0) {
 			std::cout << "Делить на ноль нельзя. ";
+			return 0;
+		}
+		else if (math_action == '%' && num2 == 0) {
+			std::cout << "Вы не можете считать отрицательный процент. ";
 			return 0;
 		}
 		else if (math_action == '+') {
