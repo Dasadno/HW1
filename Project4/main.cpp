@@ -5,30 +5,33 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	char c;
-	double a, b;
+	char math_action;
+	double num1, num2;
 
 	std::cout << "Введите первое число: ";
-		std::cin >> a;
+	std::cin >> num1;
 	std::cout << "Введите второе число: ";
-	std::cin >> b;
+	std::cin >> num2;
 	std::cout << "Введите мат. действие: ";
-		std::cin >> c;
-		if (c == '/' and b == 0) {
+		std::cin >> math_action;
+		if (num1 == '/' && num2 == 0) {
 			std::cout << "Делить на ноль нельзя. ";
 			return 0;
 		}
-		else if (c == '+') {
-			std::cout << a + b;
+		else if (math_action == '+') {
+			std::cout << "Ответ: " << num1 + num2;
 	}
-		else if (c == '-') {
-			std::cout << a - b;
+		else if (math_action == '-') {
+			std::cout << "Ответ: " << num1 - num2;
 		}
-		else if (c == '*') {
-			std::cout << a * b;
+		else if (math_action == '*') {
+			std::cout << "Ответ: " << num1 * num2;
 		}
-		else if (c == '/') {
-			std::cout << a / b;
+		else if (math_action == '/') {
+			std::cout << "Ответ: " << num1 / num2;
+		}
+		else if (math_action == '%') {
+			std::cout << "Ответ: " << num1 / 100 * num2;
 		}
 
 	
