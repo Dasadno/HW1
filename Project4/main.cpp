@@ -1,10 +1,24 @@
 #include <iostream>
-
+#include <cmath>
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
-
+	/*
+	int main_num, num1, num2;
+	int answer;
+	std::cout << "Введите двузначное число: ";
+	std::cin >> main_num;
+	if (main_num > 99) {
+		std::cout << "Вам нужно ввести двузначное число.";
+		return 0;
+	}
+	num1 = main_num / 10;
+	num2 = main_num % 10;
+	answer = num2 * 10 + num1;
+	std::cout << "Перевернутое число: " << answer;
+	*/
+	/*
 	char math_action;
 	double num1, num2;
 
@@ -13,31 +27,36 @@ int main()
 	std::cout << "Введите второе число: ";
 	std::cin >> num2;
 	std::cout << "Введите мат. действие: ";
-		std::cin >> math_action;
-		if (math_action == '/' && num2 == 0) {
-			std::cout << "Делить на ноль нельзя. ";
-			return 0;
-		}
-		else if (math_action == '%' && num2 == 0) {
-			std::cout << "Вы не можете считать отрицательный процент. ";
-			return 0;
-		}
-		else if (math_action == '+') {
-			std::cout << "Ответ: " << num1 + num2;
-	}
-		else if (math_action == '-') {
-			std::cout << "Ответ: " << num1 - num2;
-		}
-		else if (math_action == '*') {
-			std::cout << "Ответ: " << num1 * num2;
-		}
-		else if (math_action == '/') {
-			std::cout << "Ответ: " << num1 / num2;
-		}
-		else if (math_action == '%') {
-			std::cout << "Ответ: " << num1 / 100 * num2;
-		}
+	std::cin >> math_action;
 
+	if (math_action == '/' && num2 == 0) {
+		std::cout << "Делить на ноль нельзя. ";
+		return 0;
+	}
+	else if (math_action == '%' && num2 == 0) {
+		std::cout << "Вы не можете считать отрицательный процент. ";
+		return 0;
+	}
+	else if (math_action == '+') {
+		std::cout << "Ответ: " << num1 + num2;
+	}
+	else if (math_action == '-') {
+		std::cout << "Ответ: " << num1 - num2;
+	}
+	else if (math_action == '*') {
+		std::cout << "Ответ: " << num1 * num2;
+	}
+	else if (math_action == '/') {
+		std::cout << "Ответ: " << num1 / num2;
+	}
+	else if (math_action == '%') {
+		std::cout << "Ответ: " << num1 / 100 * num2;
+	}
+	else {
+		std::cout << "Попробуйте ввести другой символ. ";
+		return 0;
+	}
+	*/
 	
 	/*
 	double s = 0, t = 0;
