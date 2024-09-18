@@ -1,10 +1,37 @@
 #include <iostream>
-#include <string>
 
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
+
+	char c;
+	double a, b;
+
+	std::cout << "Введите первое число: ";
+		std::cin >> a;
+	std::cout << "Введите второе число: ";
+	std::cin >> b;
+	std::cout << "Введите мат. действие: ";
+		std::cin >> c;
+		if (c == '/' and b == 0) {
+			std::cout << "Делить на ноль нельзя. ";
+			return 0;
+		}
+		else if (c == '+') {
+			std::cout << a + b;
+	}
+		else if (c == '-') {
+			std::cout << a - b;
+		}
+		else if (c == '*') {
+			std::cout << a * b;
+		}
+		else if (c == '/') {
+			std::cout << a / b;
+		}
+
+	
 	/*
 	double s = 0, t = 0;
 	std::cout << "Введите расстояние в километрах: ";
@@ -68,7 +95,7 @@ int main()
 	
 	std::cout << "Стоимость вашей поездки: " << money << " гривен";
 	*/
-
+	
 
 	return 0;
 }
