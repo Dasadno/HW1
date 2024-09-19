@@ -121,7 +121,36 @@ int main()
 	
 	std::cout << "Стоимость вашей поездки: " << money << " гривен";
 	*/
-	
+	/*
+	double path;
+	double petrol_consumption;
+	double petrol92, petrol95, petrol100;
+	double value;
+	double cost92, cost95, cost100;
+
+	std::cout << "Введите расход бензина на 100км: ";
+	std::cin >> petrol_consumption;
+	std::cout << "Введите длинну вашей поездки: ";
+	std::cin >> path;
+
+	std::cout << "Введите стоимость 92 бензина: ";
+	std::cin >> petrol92;
+	std::cout << "Введите стоимость 95 бензина: ";
+	std::cin >> petrol95;
+	std::cout << "Введите стоимость 100 бензина: ";
+	std::cin >> petrol100;
+
+	value = (path / 100) * petrol_consumption;
+	cost92 = value * petrol92;
+	cost95 = value * petrol95;
+	cost100 = value * petrol100;
+	std::cout << "--------------------------------------------------------------";
+	std::cout << "\n \n";
+	std::cout << "Стоимость поездки на 92 бензине: " << cost92 << "\n";
+	std::cout << "Стоимость поездки на 95 бензине: " << cost95 << "\n";
+	std::cout << "Стоимость поездки на 100 бензине: " << cost100 << "\n";
+	*/
+
 
 	return 0;
 }
